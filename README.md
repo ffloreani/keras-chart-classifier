@@ -5,6 +5,11 @@ Deep learning image classifier written in Keras, used for detection of chimeric 
 Created as a part of the master thesis project at the Faculty of Electrical Engineering & Computing, University of Zagreb.
 Many thanks to Lovro Vrček, mag. phys. and prof. dr. sc. Mile Šikić for their help & guidance.
 
+## To-do
+
+* Implement some kind of cross validation to substantiate the results & tweak hyperparameters
+* Clean up the data (there seem to be some incorrectly marked images in the original set)
+
 ## Data preprocessing
 
 As the original data is stored in 3 separate folders, sorted by their overlap type (see `original_data` folder), the first step is to split it into separate training & test data sets. As the idea of the whole network is to find out only if an image represents a chimeric overlap or not, the regular & repeat overlaps are stored in an adjoining folder (labeled `non_chimeric`), with the chimeric overlaps remaining separate (labeled `chimeric`). The training/test split percentage is set to 75/25 (75% of data for training, 25% for testing). 
