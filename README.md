@@ -35,9 +35,9 @@ If you're looking for a more verbose summary, you can have a look at the model o
 Training is done by fitting the model to the data received from the image generators. The generators create batches of 32 images per epoch. To match the generated batches, there are 32 steps in every epoch of the fitting. 
 The collected metrics are visualized on a plot at the end of the evaluation.
 
-*Loss function* = Categorical cross-entropy
-*Optimizer* = RMS prop with a learning rate of e^-4
-*Metrics* = Loss value, accuracy
+* **Loss function** = Categorical cross-entropy
+* **Optimizer** = RMS prop with a learning rate of e^-4
+* **Metrics** = Loss value, accuracy
 
 ### Results after 5 epochs with 50 steps each (5 epochs only due to lack of testing hardware) 
 ![Accuracy](https://i.imgur.com/B5qrmoe.png)
